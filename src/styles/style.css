@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Bold.woff') format('woff'),
+    url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+    url('../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Regular.woff') format('woff'),
+    url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --border-radius: 8px;
+
+  --color-blue: #1677ff;
+  --color-middle-blue: #b3d1ff;
+  --color-light-blue: #dfecff;
+
+  --color-black: #000000E0;
+
+  --margin-left-menu: 325px;
+
+  --shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 20px;
+
+  color: var(--color-black);
+}
+
+
+/* Login - start */
+
+.login--wrap {
+  display: flex;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: var(--color-light-blue);
+
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.login__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: var(--color-middle-blue);
+  border-radius: var(--border-radius);
+
+  padding: 25px 30px;
+}
+
+.logo {
+  height: 49px;
+}
+
+.login__text--small {
+  font-size: 14px;
+}
+
+.login__text--wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login__form--wrap {
+  padding: 30px;
+}
+
+.login__btn--wrap {
+  margin-top: 32px;
+}
+
+/* Login - end */
+
+
+/* Loader - start */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Loader - end */
+
+
+/* Header - start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-middle-blue);
+  box-shadow: var(--shadow);
+
+  position: relative;
+  z-index: 999;
+}
+
+.header__logout {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding-right: 30px;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.header__logout:hover {
+  color: var(--color-blue);
+}
+
+.header__logout_text {
+  font-size: 24px;
+}
+
+/* Header - end */
+
+
+/* Sidemenu - start */
+
+.menu--wrap {
+  display: flex;
+}
+
+.menu {
+  min-width: var(--margin-left-menu);
+  height: calc(100vh - 99px);
+
+  background-color: var(--color-light-blue);
+}
+
+.menu__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item {
+  padding: 15px 30px 13px 30px;
+
+  cursor: pointer;
+  transition: .2s;
+}
+
+.active,
+.menu__item:hover {
+  background: var(--color-middle-blue);
+  border-radius: var(--border-radius);
+}
+
+.outlet-container {
+  padding: 40px;
+  width: 100%;
+  height: calc(100vh - 99px);
+
+  overflow-y: auto;
+}
+
+/* Sidemenu - end */
+
+
+.table-page--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.table-page__reports--wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+/* Table - start */
+
+.custom-table .ant-table {
+  font-size: 16px;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: var(--color-light-blue);
+}
+
+.custom-table .ant-table-thead > tr > th.ant-table-column-sort,
+.custom-table .ant-table-thead > tr > th.ant-table-column-has-sorters:hover {
+  background-color: var(--color-middle-blue);
+}
+
+.custom-table .ant-table-thead > tr > th {
+  border-right: 1px solid white;
+}
+
+.ant-table-row {
+  cursor: pointer;
+}
+
+.reports .ant-table-row {
+  cursor: default;
+}
+
+/* Table - end */
+
+
+.input__label {
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.input--wrap.radio {
+  max-width: 200px;
+}
+
+.input--wrap.owner {
+  max-width: 380px;
+}
+.input--wrap.warehouse {
+  max-width: 250px;
+}
+
+.form--btns {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.icons--wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.icons--wrap > button {
+  margin-top: 4px;
+}
+
+
+/* Reports - start */
+
+.reports-text {
+  font-size: 24px;
+  display: flex;
+  gap: 7px;
+}
+
+.custom-column {
+  background-color: var(--color-light-blue);
+}
+
+/* Reports - end */

@@ -1,0 +1,252 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.ru",
+      "password": "$2a$10$Amlr8QTBGACsEiu2TJCgXuXQWXh5JrSaBD/hqew/spkYQydgV1IKi",
+      "name": "Иванов Иван Иванович",
+      "id": 1
+    }
+  ],
+  "reservations": [
+    {
+      "vehicle": {
+        "id": "3",
+        "carBrand": "BMW",
+        "carNumber": "DEF1234",
+        "weight": 2.8,
+        "owner": {
+          "id": "3",
+          "inn": "363512714970",
+          "name": "Logistics Co."
+        }
+      },
+      "warehouse": {
+        "id": "2",
+        "name": "Электроника"
+      },
+      "status": "in",
+      "dateTime": "2024-11-30T02:27:00.000Z",
+      "id": "3"
+    },
+    {
+      "vehicle": {
+        "id": "5",
+        "carBrand": "Mercedes",
+        "carNumber": "JKL1234",
+        "weight": 4.5,
+        "owner": {
+          "id": "5",
+          "inn": "582887814721",
+          "name": "AutoCorp"
+        }
+      },
+      "warehouse": {
+        "id": "1",
+        "name": "Хозтовары"
+      },
+      "status": "in",
+      "dateTime": "2024-11-30T06:42:00.000Z",
+      "id": "5"
+    },
+    {
+      "vehicle": {
+        "id": "5",
+        "carBrand": "Mercedes",
+        "carNumber": "JKL1234",
+        "weight": 4.5,
+        "owner": {
+          "id": "5",
+          "inn": "582887814721",
+          "name": "AutoCorp"
+        }
+      },
+      "warehouse": {
+        "id": "2",
+        "name": "Электроника"
+      },
+      "status": "in",
+      "dateTime": "2024-11-01T00:00:00.000Z",
+      "id": "ee6e"
+    },
+    {
+      "vehicle": {
+        "id": "3",
+        "carBrand": "BMW",
+        "carNumber": "DEF1234",
+        "weight": 2.8,
+        "owner": {
+          "id": "3",
+          "inn": "363512714970",
+          "name": "Logistics Co."
+        }
+      },
+      "warehouse": {
+        "id": "3",
+        "name": "Мягкие игрушки"
+      },
+      "status": "out",
+      "dateTime": "2024-10-31T19:00:00.000Z",
+      "id": "8f30"
+    }
+  ],
+  "vehicles": [
+    {
+      "carNumber": "ABC1234",
+      "carBrand": "Toyota",
+      "weight": "5",
+      "owner": {
+        "id": "5",
+        "inn": "582887814721",
+        "name": "AutoCorp"
+      },
+      "id": "1"
+    },
+    {
+      "carNumber": "DEF1234",
+      "carBrand": "BMW",
+      "weight": 2.8,
+      "owner": {
+        "id": "3",
+        "inn": "363512714970",
+        "name": "Logistics Co."
+      },
+      "id": "3"
+    },
+    {
+      "id": "5",
+      "carBrand": "Mercedes",
+      "carNumber": "JKL1234",
+      "weight": 4.5,
+      "owner": {
+        "id": "5",
+        "inn": "582887814721",
+        "name": "AutoCorp"
+      }
+    },
+    {
+      "id": "884e",
+      "carNumber": "ABC4321",
+      "carBrand": "Toyotа",
+      "weight": "2",
+      "owner": {
+        "id": "2",
+        "inn": "607150471255",
+        "name": "Transport LLC"
+      }
+    },
+    {
+      "carNumber": "ABC12345",
+      "carBrand": "Toyotaa",
+      "weight": 4,
+      "owner": {
+        "id": "3",
+        "inn": "363512714970",
+        "name": "Logistics Co."
+      },
+      "id": "ialrx0E"
+    },
+    {
+      "carNumber": "ABC12345",
+      "carBrand": "Toyota",
+      "weight": 4,
+      "owner": {
+        "id": "5",
+        "inn": "582887814721",
+        "name": "AutoCorp"
+      },
+      "id": "X-OBgfk"
+    },
+    {
+      "carNumber": "ABC1234",
+      "carBrand": "Toyotа",
+      "weight": 5,
+      "owner": {
+        "name": "Transport LLC",
+        "inn": "607150471255",
+        "id": "2"
+      },
+      "id": "eCTx9tj"
+    }
+  ],
+  "clients": [
+    {
+      "name": "Transport LLC",
+      "inn": "607150471255",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "inn": "363512714970",
+      "name": "Logistics Co."
+    },
+    {
+      "id": "5",
+      "inn": "582887814721",
+      "name": "AutoCorp"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "1",
+      "name": "Хозтовары"
+    },
+    {
+      "id": "2",
+      "name": "Электроника"
+    },
+    {
+      "id": "3",
+      "name": "Мягкие игрушки"
+    }
+  ],
+  "reports": [
+    {
+      "key": "1",
+      "status": "out",
+      "time": "2024-11-30T08:00:00.000Z",
+      "weight1": 2,
+      "weight2": 2,
+      "weight3": 2,
+      "weight4": 2,
+      "weight5": 2,
+      "weight6": 2,
+      "id": "11fa"
+    },
+    {
+      "key": "4",
+      "status": "in",
+      "time": "2024-11-30T11:00:00.000Z",
+      "weight1": 3,
+      "weight2": 3,
+      "weight3": 3,
+      "weight4": 3,
+      "weight5": 3,
+      "weight6": 3,
+      "id": "c8f9"
+    },
+    {
+      "key": "2",
+      "status": "out",
+      "time": "2024-11-30T09:00:00.000Z",
+      "weight1": 2,
+      "weight2": 2,
+      "weight3": 2,
+      "weight4": 2,
+      "weight5": 2,
+      "weight6": 2,
+      "id": "e887"
+    },
+    {
+      "key": "3",
+      "status": "in",
+      "time": "2024-11-30T10:00:00.000Z",
+      "weight1": 3,
+      "weight2": 3,
+      "weight3": 3,
+      "weight4": 3,
+      "weight5": 3,
+      "weight6": 3,
+      "id": "ac6f"
+    }
+  ]
+}
