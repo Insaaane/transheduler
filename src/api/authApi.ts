@@ -1,7 +1,8 @@
 import axios from "axios";
+import { URL } from "../utils/const";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: URL,
   headers: {
     "Content-Type": "application/json",
   },
